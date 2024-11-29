@@ -1,0 +1,8 @@
+services:
+  web:
+    image: php:8.2-apache    #check the php version you need for your project
+    ports:
+      - "90:80"    #this line maps your pc port to the container port
+    volumes:
+      - ./html:/var/www/html    #this line maps the content of ./html in your pc to the /var/www/html of the container
+ 
